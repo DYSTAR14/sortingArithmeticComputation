@@ -15,7 +15,7 @@ for ((j=0;j<4-1;j++))
 do
 	for ((k=j+1;k<4;k++))
 	do
-		if [ ${array[k]} -gt ${array[j]} ];then
+		if [ ${array[k]} -lt ${array[j]} ];then
 			temp=${array[k]}
 			array[$k]=${array[j]}
 			array[$j]=$temp
