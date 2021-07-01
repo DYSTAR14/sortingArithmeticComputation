@@ -1,6 +1,7 @@
 #!/bin/bash -x
 read -p "Enter 3 number : " a b c
 echo $a $b $c
+declare -A compute
 compute[1]=$((a+b*c))
 compute[2]=$((a*b+c))
 compute[3]=$((c+a/b))
