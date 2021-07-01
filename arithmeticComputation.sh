@@ -1,11 +1,9 @@
 #!/bin/bash -x
 read -p "Enter 3 number : " a b c
 echo $a $b $c
-compute1=$((a+b*c))
-compute2=$((a*b+c))
-compute3=$((c+a/b))
-compute4=$((a%b+c))
-echo $compute1
-echo $compute2
-echo $compute3
-echo $compute4
+compute[1]=$((a+b*c))
+compute[2]=$((a*b+c))
+compute[3]=$((c+a/b))
+compute[4]=$((a%b+c))
+echo ${compute[@]}
+
